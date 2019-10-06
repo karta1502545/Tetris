@@ -192,16 +192,7 @@ void T1(int col_loc, int *map[])
             map[i-1][col_loc+1] = 1;
             map[i-1][col_loc+2] = 1;           
         }
-        if
-        (
-        /*
-        map[i][col_loc+1]==0 && 
-        map[i-1][col_loc]==0 && 
-        map[i-1][col_loc+1]==0 && 
-        map[i-1][col_loc+2]==0 &&
-        */
-        (map[i][col_loc]==1 || map[i+1][col_loc+1]==1 || map[i][col_loc+2]==1)
-        )
+        if(map[i][col_loc]==1 || map[i+1][col_loc+1]==1 || map[i][col_loc+2]==1)
         {
             map[i][col_loc+1] = 1;
             map[i-1][col_loc] = 1;
@@ -224,16 +215,7 @@ void T2(int col_loc, int *map[])
             map[i-1][col_loc+1] = 1;
             map[i-2][col_loc+1] = 1;
         }
-        if
-        (
-        /*
-        map[i-1][col_loc]==0 && 
-        map[i][col_loc+1]==0 && 
-        map[i-1][col_loc+1]==0 && 
-        map[i-2][col_loc+1]==0 &&
-        */
-        (map[i][col_loc]==1 || map[i+1][col_loc+1]==1)
-        )
+        if(map[i][col_loc]==1 || map[i+1][col_loc+1]==1)
         {
             map[i-1][col_loc] = 1;
             map[i][col_loc+1] = 1;
