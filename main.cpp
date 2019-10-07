@@ -93,7 +93,7 @@ int main()
         else if(input == "O")  O(input_column, map);
 
         // Judge if lines can be eliminated.
-        for(int i=0; i<row+extend; i++){
+        for(int i=extend; i<row+extend; i++){
             bool all_one = true;
             for(int j=0; j<col; j++){
                 if(map[i][j] == 0){
