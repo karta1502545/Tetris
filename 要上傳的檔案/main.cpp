@@ -8,7 +8,7 @@ using namespace std;
 int row, col, extend;
 
 ifstream infile("Tetris.data");//以輸入方式開啟檔案
-ofstream outfile("Tetris.final");//以輸出方式開啟檔案
+ofstream outfile("Tetris.output");//以輸出方式開啟檔案
 
 void printmap(int *map[]);
 void printans(int *map[]);
